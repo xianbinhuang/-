@@ -1,0 +1,56 @@
+<!-- pages/index/index.wxml -->
+<view class="page">
+  <view>
+    <view class="row">test{{userTelephone}}</view>
+    <view class="row,section">天府新区自动化外来人员登记表</view>
+    <view class="row">
+      <view>姓名:</view>
+      <view>
+        <input focus type='text' class='weui-cells_input' maxlength='140' placeholder-style="text-align:center"
+               placeholder='请输入姓名'></input>
+      </view>
+    </view>
+    <view class="row">
+      <view>单位:</view>
+      <view>
+        <input type='text' class='weui-cells_input' maxlength='140' placeholder-style="text-align:center"
+               bindinput="bindKeyInputCompany" placeholder='请输入单位'></input>
+      </view>
+    </view>
+    <view class="row">
+      <view>手机:</view>
+      <view>
+        <input type='number' class='weui-cells_input' maxlength='140' placeholder-style="text-align:center"
+               bindinput="bindKeyInputTelephone" placeholder='请输入手机'></input>
+      </view>
+    </view>
+    <view class="row, section">工作时间</view>
+    <view class="row">
+      <view>开始</view>
+      <view>
+        <picker mode="time" value="{{timeStart}}" bindchange="bindTimeChangestart">
+          <view>{{timeStart}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="row">
+      <view>结束</view>
+      <view>
+        <picker mode="time" value="{{timeStop}}" bindchange="bindTimeChangestop">
+          <view>{{timeStop}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="row, section">工作内容</view>
+    <view style='height:185rpx'>
+      <input class="weui-input" bindinput="bindKeyInput" placeholder-style="text-align:center" placeholder="请输入工作内容"></input>
+    </view>
+  </view>
+  <view style="width: 100%; color: #fff;">
+    <view class="row">
+      <navigator url="history" class="blue">
+        <icon type="waiting_circle" color="white" size="25"  />
+      </navigator>
+    </view>
+  </view>
+</view>

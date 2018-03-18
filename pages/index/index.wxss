@@ -1,0 +1,57 @@
+/* pages/index/index.wxss */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+    width: 100%;
+    height: 80rpx;
+    justify-content: center;
+    align-items: center;
+   
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    height: 185rpx;
+    background-color: #00ffff;
+}
+.row view,.row navigator {
+    width:50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+.row view:active {
+    background-color: #ffdd00;
+}
+.orange {
+    background: #f77d11;
+}
+.blue {
+    background-color: #0099cc;
+}
+.input_bc{
+    background-color: #eee
+}
+
+.section{
+    background-color: #b5b5b5;
+    height: 80rpx;
+    justify-content: center;
+    align-items: center;
+  }
+.weui-input {
+  float: center;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 100%;
+  height: 77px;
+  border: 1px solid #D9D9D9;
+}
