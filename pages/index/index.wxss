@@ -1,5 +1,5 @@
 /* pages/index/index.wxss */
-
+@import '../../sim.js/weui/weui.wxss'; 
 .row {
     display: flex;
     flex-direction: row;

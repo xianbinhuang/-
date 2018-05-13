@@ -1,7 +1,7 @@
 <!-- pages/index/index.wxml -->
 <view class="page">
   <view>
-    <view class="row">test{{userTelephone}}</view>
+    <view class="row"></view>
     <view class="row,section">天府新区自动化外来人员登记表</view>
     <view class="row">
       <view>姓名:</view>
@@ -47,9 +47,9 @@
     </view>
   </view>
   <view style="width: 100%; color: #fff;">
-    <view class="row">
-      <navigator url="history" class="blue">
-        <icon type="waiting_circle" color="white" size="25"  />
+    <view >
+      <navigator url="history" >
+       <button>登记</button>
       </navigator>
     </view>
   </view>
