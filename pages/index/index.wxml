@@ -1,13 +1,13 @@
 <!-- pages/index/index.wxml -->
 <view class="page">
   <view>
-    <view class="row"></view>
+    <view class="row">{{userName}}</view>
     <view class="row,section">天府新区自动化外来人员登记表</view>
     <view class="row">
       <view>姓名:</view>
       <view>
         <input focus type='text' class='weui-cells_input' maxlength='140' placeholder-style="text-align:center"
-               placeholder='请输入姓名'></input>
+                bindinput="bindKeyInputuserName" placeholder='请输入姓名'></input>
       </view>
     </view>
     <view class="row">
@@ -48,8 +48,8 @@
   </view>
   <view style="width: 100%; color: #fff;">
     <view >
-      <navigator url="history" >
-       <button>登记</button>
+      <navigator url="registration" >
+       <button bindtap = "registration1">登记</button>
       </navigator>
     </view>
   </view>

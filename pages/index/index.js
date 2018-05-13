@@ -25,10 +25,11 @@ Page({
         // alert(123);
     },
 
-    bindKeyInputName: function(e) {
+    bindKeyInputuserName: function(e) {
         this.setData({
             userName: e.detail.value
         })
+        wx.setStorageSync("var1", this.data.userName)
     },
     bindKeyInputCompany: function(e) {
         this.setData({
@@ -53,6 +54,10 @@ Page({
         this.setData({
             timeStop: e.detail.value
         })
+    },
+
+    registration1: function(e) {
+        console.log('提交发送，携带值为', e.detail.value)
     },
 
     onShareAppMessage(res) {

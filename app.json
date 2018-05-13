@@ -1,12 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/index/history"
+    "pages/index/history",
+    "pages/index/registration"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "外来人员登记",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
